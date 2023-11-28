@@ -227,6 +227,7 @@ pub enum ApiErrorsCode {
     TransferSourceBalanceParametersMismatch,
     TransfersNotAllowed,
     UrlInvalid,
+    CustomerTaxLocationInvalid
 }
 
 impl ApiErrorsCode {
@@ -234,6 +235,7 @@ impl ApiErrorsCode {
         match self {
             ApiErrorsCode::AccountClosed => "account_closed",
             ApiErrorsCode::AccountCountryInvalidAddress => "account_country_invalid_address",
+            ApiErrorsCode::CustomerTaxLocationInvalid => "customer_tax_location_invalid",
             ApiErrorsCode::AccountErrorCountryChangeRequiresAdditionalSteps => {
                 "account_error_country_change_requires_additional_steps"
             }
