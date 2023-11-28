@@ -1867,6 +1867,7 @@ pub enum CreateInvoicePaymentSettingsPaymentMethodTypes {
     Sofort,
     UsBankAccount,
     WechatPay,
+    Eps,
 }
 
 impl CreateInvoicePaymentSettingsPaymentMethodTypes {
@@ -1900,6 +1901,7 @@ impl CreateInvoicePaymentSettingsPaymentMethodTypes {
             CreateInvoicePaymentSettingsPaymentMethodTypes::Sofort => "sofort",
             CreateInvoicePaymentSettingsPaymentMethodTypes::UsBankAccount => "us_bank_account",
             CreateInvoicePaymentSettingsPaymentMethodTypes::WechatPay => "wechat_pay",
+            CreateInvoicePaymentSettingsPaymentMethodTypes::Eps => "eps",
         }
     }
 }
